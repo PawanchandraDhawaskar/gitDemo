@@ -1,0 +1,29 @@
+M2_HOME D:\apache-maven-3.3.9-bin\apache-maven-3.3.9
+
+%M2_HOME%\bin
+
+
+JAVA_HOME C:\Program Files\Java\jdk1.8.0_191
+
+%JAVA_HOME%\bin
+
+
+CATALINA_HOME D:\Tomcat 8.0
+%CATALINA_HOME%\bin
+
+startup
+shutdown
+
+http://localhost:9090/
+deployer
+deployer
+
+
+
+JENKINS_HOME D:\Tools\Jenkins\JenkinsHome
+%JENKINS_HOME%
+
+http://localhost:9191
+java -jar jenkins.war --httpPort=9191
+
+secrets\admin use

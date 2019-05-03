@@ -1,0 +1,40 @@
+git init
+
+#remote directory setup
+git remote -v
+git remote add origin http://srv03wapsdlc2:8080/tfs/DefaultCollection/TESTGIT/_git/TESTGIT
+
+
+git clone http://srv03wapsdlc2:8080/tfs/DefaultCollection/TESTGIT/_git/TESTGIT
+git config -l
+git status
+git add -A
+git reset
+git commit -m"msg"
+
+#branch operations
+git branch
+git branch branch_name
+git checkout branch_name
+
+git pull origin master
+fatal: refusing to merge unrelated histories
+
+git pull origin master --allow-unrelated-histories
+
+
+git push origin master
+
+#deleting whole branch
+$git checkout master
+$ git branch -d <branch_name>
+Deleting local branches in Git
+$ git push origin -d <branch_name>
+Deleting remote branches in Git
+
+#deleting particular file in a branch
+$git rm filename.txt
+$git commit -m"Removed one file"
+$git push origin secondbranch
+
+#merging
